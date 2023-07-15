@@ -1,0 +1,345 @@
+.waves {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.waves .bar {
+    width: 12px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
+    animation: up_down 2s cubic-bezier(0.1,0.7,0.5,0.1) infinite;
+}
+
+@keyframes up_down {
+    0%,
+    100% {
+        height: 2px;
+    }
+    50% {
+        height: 80px;
+    }
+}
+
+.waves .bar:nth-child(1) {
+    background-color: darkblue;
+    animation-delay: 1s;    
+}
+
+.waves .bar:nth-child(2) {
+    background-color: blue;
+    animation-delay: 0.8s;    
+}
+
+.waves .bar:nth-child(3) {
+    background-color: dodgerblue;
+    animation-delay: 0.6s;    
+}
+
+.waves .bar:nth-child(4) {
+    background-color: deepskyblue;
+    animation-delay: 0.4s;    
+}
+
+.waves .bar:nth-child(5) {
+    background-color: skyblue;
+    animation-delay: 0.2s;    
+}
+
+.waves .bar:nth-child(6) {
+    background-color: skyblue;
+    animation-delay: 0.2s;    
+}
+
+.waves .bar:nth-child(7) {
+    background-color: deepskyblue;
+    animation-delay: 0.4s;    
+}
+
+.waves .bar:nth-child(8) {
+    background-color: dodgerblue;
+    animation-delay: 0.6s;    
+}
+
+.waves .bar:nth-child(9) {
+    background-color: blue;
+    animation-delay: 0.8s;    
+}
+
+.waves .bar:nth-child(10) {
+    background-color: darkblue;
+    animation-delay: 1s;    
+} 
+
+
+ 
+
+.burbujas div {
+
+border-radius: 100%;
+position: absolute;
+bottom: 0;
+z-index: 0;
+animation: animarburbujas 8s linear infinite;
+}
+
+.burbujas div:nth-child(1) {
+width: 20px;
+height: 15px;
+left: 10px;
+animation-duration: 8s;
+}
+
+.burbujas div:nth-child(2) {
+width: 40px;
+height: 35px;
+left: 15%;
+animation-duration: 12s;
+}
+
+.burbujas div:nth-child(3) {
+width: 14px;
+height: 11px;
+left: 40%;
+animation-duration: 9s;
+}
+
+.burbujas div:nth-child(4) {
+width: 45px;
+height: 40px;
+left: 50%;
+animation-duration: 15s;
+}
+
+.burbujas div:nth-child(5) {
+width: 45px;
+height: 40px;
+left: 65%;
+animation-duration: 9s;
+}
+
+.burbujas div:nth-child(6) {
+width: 30px;
+height: 28px;
+left: 85%;
+animation-duration: 13s;
+}
+
+.burbujas div:nth-child(7) {
+width: 15px;
+height: 12px;
+left: 90%;
+animation-duration: 7s;
+}
+
+.burbujas div:nth-child(8) {
+    width: 15px;
+    height: 12px;
+    left: 95%;
+    animation-duration: 9s;
+}
+
+.burbujas div:nth-child(9) {
+    width: 30px;
+    height: 28px;
+    left: 85%;
+    animation-duration: 14s;
+}
+
+.burbujas div:nth-child(10) {
+    width: 45px;
+    height: 40px;
+    left: 93%;
+    animation-duration: 10s;
+    }
+
+@keyframes animarburbujas {
+0% {
+    width: 0;
+    height: 0;
+}
+3% {
+    width: 20px;
+    height: 17px;
+}
+50% {
+    margin-left: 20px;
+    opacity: 0.5;
+}
+100% {
+    transform: rotate(90deg);
+    bottom: 270vh;    
+}
+}
+
+ 
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenedor figure{
+   position:relative;
+    height: 250px;
+    cursor: pointer;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px whitesmoke;
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,103,123,0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+
+
+.contenedor figure:hover > .capa {
+opacity: 1;
+visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: larger;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+     margin-top: 30px;
+}
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+ @media (min-width: 1px)  {
+    body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    body div {
+        max-width: 100% !important;
+    }    
+    
+} 
+
+
+
+
+ 
+
+label {
+    width:50px;
+    height:20px;
+    position: relative;
+    display: flex;
+    background: #242424;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+
+label:after {
+content: "";
+width:20px;
+height: 20px;
+position: absolute;
+left:4px;
+background: linear-gradient(180deg,#075985,#312e81);
+border-radius: 180px;
+box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+z-index: 50;
+}
+
+input {
+width: 0;
+height: 0;
+visibility: hidden;
+}
+
+input:checked + label {
+    
+    background: #ebebeb;
+  }
+
+input:checked + label:after {
+transform: translateX(110%);
+background: linear-gradient(180deg,#f0f9ff,#082f49);
+}
+
+label, label:after {
+transition: 0.3s
+}
+
+label:active:after{ 
+    width: 20px; 
+  }
+
+
+label svg {
+position: absolute;
+width: 20px;
+z-index: 52;
+}
+label svg.moon {
+left:27px;
+fill:#fff;
+transition: 0.3s;
+}
+label svg.sun {
+left:3px;
+fill:#7e7e7e;
+transition: 0.3s;
+}
+input:checked + label svg.sun {
+fill:#fff;
+}
+input:checked + label svg.moon {
+fill:#fff;
+}
+
+
+
+@media (max-width: 687px) {
+    .social-link{
+        display: none;        
+    }
+
+    label {
+        margin-right: 5px;
+    }
+  }
+
+
