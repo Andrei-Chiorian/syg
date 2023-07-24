@@ -9,21 +9,12 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/png" href="img/logo2.png" sizes="64x64">
   <title>SyG Grúas y Transportes</title>
-  <script>
-    const button = document.querySelector('.relative button');
-    const menu = document.querySelector('.relative .absolute');
-
-    button.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
 </head>
 <body>
   <header>
     <nav class="flex items-center flex-wrap bg-gradient-to-r from-red-500 to-blue-950 p-3">
       <div class="flex flex-shrink-0 text-white mr-6">
-        <img src="imagenes/logosyg.jpg" alt="logosyg" class="h-8 w-12 ml-4" width="54" height="54" > 
-        <span class="ml-6 font-semibold text-xl tracking-tight">SyG Grúas y Transportes</span>
+        <img src="imagenes/logosyg.jpg" alt="logosyg" class="h-16 w-56 ml-4" width="54" height="54" > 
       </div>
       <div class="block lg:hidden">
         <button id='boton' class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -31,7 +22,7 @@
         </button>
       </div>
       <div id='menu' class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class=" flex items-center justify-center mr-56 text-sm lg:flex-grow">
+        <div class=" flex items-center justify-center mr-20 text-lg lg:flex-grow">
           <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-600 mr-4">
             Quienes somos
           </a>
@@ -42,8 +33,12 @@
             Materiales
           </a>
         </div>
-        <div>
-          <a href="#" class="animate-bounce inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-white hover:bg-red-500 mt-4 lg:mt-0">Contacto</a>
+        <div class="flex text-white text-clip ml-4 pr-6">
+          <img src="imagenes/WhatsApp.svg.png" alt="WhatsApp" class="h-16 w-20" width="54" height="54">
+          <div class="flex flex-col text-left">
+            <span class="ml-6 font-semibold text-xl tracking-tight">608 71 00 56</span>
+            <span class="ml-6 font-semibold text-xl tracking-tight">syg@hotmail.com</span>
+          </div>          
         </div>
       </div>
     </nav>
